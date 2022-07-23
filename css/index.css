@@ -1,0 +1,425 @@
+/* karla-regular - latin */
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/karla-v22-latin-regular.woff2") format("woff2"),
+    url("../fonts/karla-v22-latin-regular.woff") format("woff");
+}
+
+/* karla-700 - latin */
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/karla-v22-latin-700.woff2") format("woff2"),
+    url("../fonts/karla-v22-latin-700.woff") format("woff");
+}
+
+/* dm-serif-display-regular - latin */
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/dm-serif-display-v10-latin-regular.woff2") format("woff2"),
+    url("../fonts/dm-serif-display-v10-latin-regular.woff") format("woff");
+}
+
+/* VARIABLES */
+
+:root {
+  --dark-black: #2c2830;
+  --dark-grey: #837d88;
+  --dark-blue: #2d2641;
+  --light-blue: #96a9c6;
+  --text-white: #ffffff;
+  --light-purple: #c396c6;
+  --milk-white: #fafafa;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Karla", "Arial", sans-serif;
+  font-weight: 700;
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+ul,
+ol {
+  margin: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1150px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+/* header start*/
+.site-header {
+  padding: 21px 0px 19px 0px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 111px;
+  height: 18px;
+  margin-right: auto;
+}
+
+.header-box__nav {
+  width: 270px;
+  margin-right: 33px;
+}
+
+.header-box__list {
+  display: flex;
+}
+
+.header-box__items:not(:last-child) {
+  margin-right: 25px;
+}
+
+.header-box__links {
+  color: var(--dark-grey);
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.link {
+  border: 1px solid var(--dark-black);
+  background-color: var(--text-white);
+  width: 148px;
+  padding: 13px 28px 13px 28px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: var(--dark-black);
+}
+
+/*header end*/
+
+/* main start */
+/* top section start*/
+.top-section {
+  position: relative;
+  background-color: #2d2641;
+}
+
+.top-section::before {
+  position: absolute;
+  left: calc(50% + -1328px);
+  top: calc(50% + 98px);
+  display: block;
+  width: 699px;
+  height: 651px;
+  background-image: url("../images/697\ \(1\).svg");
+  content: "";
+}
+
+.top-content::after {
+  position: absolute;
+  display: block;
+  width: 699px;
+  height: 651px;
+  right: calc(50% + -1080px);
+  bottom: calc(50% + -230px);
+  background-image: url("../images/697\ \(1\).svg");
+  content: "";
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.top-content-link::after {
+  position: absolute;
+  width: 540px;
+  height: 650px;
+  right: calc(50% + -575px);
+  bottom: calc(50% + -439px);
+  background-image: url("../images/family-img.png");
+  content: "";
+}
+
+.top-content__line {
+  margin-top: 105px;
+  margin-bottom: 63px;
+  border: 1px solid var(--text-white);
+  height: 1px;
+  width: 150px;
+}
+
+.top-content__title {
+  width: 525px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 72px;
+  letter-spacing: -1px;
+  color: var(--text-white);
+  line-height: 64px;
+}
+
+.top-content__paragraph {
+  width: 532px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-white);
+}
+
+.top-content-link {
+  margin-bottom: 127px;
+  border: 1px solid var(--text-white);
+  background-color: var(--dark-blue);
+  color: var(--text-white);
+}
+
+/* top section end*/
+
+/* middle section start*/
+.middle-content {
+  display: flex;
+  flex-direction: column;
+}
+.middle-content_line {
+  margin-top: 305px;
+  margin-bottom: 63px;
+  border: 1px solid var(--light-purple);
+  height: 1px;
+  width: 150px;
+}
+.middle-content_title {
+  margin: 0;
+  margin-bottom: 214px;
+  width: 717px;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: var(--dark-black);
+}
+
+.middle-content_list {
+  display: flex;
+  position: relative;
+  margin-bottom: 158px;
+}
+
+.electro::before {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  right: calc(50% + 488px);
+  bottom: calc(50% + 133px);
+  background-image: url("../images/Group-electro\ 5.svg");
+  content: "";
+}
+
+.money::before {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  right: calc(50% + 109px);
+  bottom: calc(50% + 133px);
+  background-image: url("../images/Group-dollar\ 7.png");
+  content: "";
+}
+
+.human::before {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  right: calc(50% + -271px);
+  bottom: calc(50% + 133px);
+  background-image: url("../images/Group-human\ 8.svg");
+  content: "";
+}
+
+.middle-content_list-title {
+  margin: 0;
+  width: 350px;
+  margin-bottom: 16px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.388889px;
+  color: var(--dark-black);
+}
+.middle-content_paragraph {
+  margin: 0;
+  margin-right: 30px;
+  width: 350px;
+  font-family: "Karla";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--dark-grey);
+}
+
+.middle-content_aside {
+  background-color: var(--dark-blue);
+  margin-bottom: 150px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.middle-aside_title {
+  width: 475px;
+  margin: 0px;
+  margin-top: 69px;
+  margin-bottom: 69px;
+  margin-left: 81px;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.777778px;
+  color: var(--text-white);
+}
+.middle-aside_link {
+  margin-right: 118px;
+  border: 1.5px solid var(--text-white);
+  padding: 13px 24.5px 12px 24.5px;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: var(--text-white);
+}
+.middle-aside_link::after {
+  position: absolute;
+  z-index: 0;
+  width: 767px;
+  height: 715px;
+  right: calc(50% + -866px);
+  bottom: calc(50% + -373px);
+  background-image: url("../images/76510\ \(1\).svg");
+  content: "";
+  color: #fff;
+}
+/* middle section end*/
+/* main end */
+
+/* footer start*/
+.insure_footer {
+  background-color: var(--milk-white);
+}
+
+.social_media {
+  display: flex;
+  align-items: center;
+}
+
+.info-media {
+  margin-top: 64px;
+  margin-bottom: 34px;
+}
+.logo {
+}
+.social_media-list {
+  display: flex;
+  align-items: center;
+}
+
+.social_media-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social-media-middle_line {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #dadada;
+  height: 1px;
+  width: 1147px;
+}
+
+.about {
+  margin-bottom: 64px;
+}
+.about-titles {
+  display: flex;
+  width: 1145px;
+  margin-top: 48px;
+  margin-bottom: 36px;
+}
+.about-title {
+  margin: 0px;
+  width: 264px;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: var(--dark-grey);
+}
+.about-title:not(:first-child) {
+  margin-left: 30px;
+}
+.about-list_items {
+  display: flex;
+  align-items: center;
+}
+.about-list {
+  width: 263px;
+}
+.about-list:not(:first-child) {
+  margin-left: 30px;
+}
+
+.about-list_item {
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: var(--dark-blue);
+}
+.about-list_item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+/* footer end*/
